@@ -19,6 +19,7 @@
 		99A0D73228405089007009D1 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73128405089007009D1 /* FeedView.swift */; };
 		99A0D73428407176007009D1 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73328407176007009D1 /* FeedCell.swift */; };
 		99A0D7362840A5F2007009D1 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D7352840A5F2007009D1 /* SearchBar.swift */; };
+		99A0D7382840A925007009D1 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D7372840A925007009D1 /* PostGridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		99A0D73128405089007009D1 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		99A0D73328407176007009D1 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		99A0D7352840A5F2007009D1 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		99A0D7372840A925007009D1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 		99A0D72628404F89007009D1 /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				99A0D7372840A925007009D1 /* PostGridView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				99A0D73228405089007009D1 /* FeedView.swift in Sources */,
 				99A0D72C28404FF2007009D1 /* SearchView.swift in Sources */,
+				99A0D7382840A925007009D1 /* PostGridView.swift in Sources */,
 				99A0D72A28404FD0007009D1 /* ProfileView.swift in Sources */,
 				99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */,
 				99A0D72828404FBC007009D1 /* UploadPostView.swift in Sources */,
