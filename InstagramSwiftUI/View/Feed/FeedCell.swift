@@ -22,6 +22,7 @@ struct FeedCell: View {
                 Text("venom")
                     .font(.system(size: 14, weight: .semibold))
             }
+            .padding([.leading, .bottom], 8)
             
             // post image
             Image("venom-7")
@@ -31,12 +32,12 @@ struct FeedCell: View {
                 .clipped()
             
             // action buttons
-            HStack(spacing: 8) {
+            HStack(spacing: 16) {
                 Button(action: {}, label: {
                     Image(systemName: "heart")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
                         .padding(4)
                 })
@@ -45,7 +46,7 @@ struct FeedCell: View {
                     Image(systemName: "bubble.right")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
                         .padding(4)
                 })
@@ -54,23 +55,32 @@ struct FeedCell: View {
                     Image(systemName: "paperplane")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: 28, height: 28)
+                        .frame(width: 20, height: 20)
                         .font(.system(size: 20))
                         .padding(4)
                 })
-            }.foregroundColor(.black)
+            }
+            .padding(.leading, 4)
+            .foregroundColor(.black)
             
             // caption
+            
+            Text("3 likes")
+                .font(.system(size: 14, weight: .semibold))
+                .padding(.leading, 8)
+                .padding(.bottom, 2)
+            
             HStack {
                 Text("venom").font(.system(size: 14, weight: .semibold)) +
                 Text("Hello world.")
                     .font(.system(size: 15))
-            }
+            }.padding(.horizontal, 8)
             
             Text("2d")
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
-                .padding(.top)
+                .padding(.leading, 8)
+                .padding(.top, -2)
         }
     }
 }
