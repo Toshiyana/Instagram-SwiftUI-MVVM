@@ -17,6 +17,7 @@
 		99A0D72E28405006007009D1 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D72D28405006007009D1 /* NotificationsView.swift */; };
 		99A0D7302840504F007009D1 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D72F2840504F007009D1 /* MainTabView.swift */; };
 		99A0D73228405089007009D1 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73128405089007009D1 /* FeedView.swift */; };
+		99A0D73428407176007009D1 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73328407176007009D1 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		99A0D72D28405006007009D1 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		99A0D72F2840504F007009D1 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		99A0D73128405089007009D1 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		99A0D73328407176007009D1 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				99A0D73128405089007009D1 /* FeedView.swift */,
+				99A0D73328407176007009D1 /* FeedCell.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				99A0D7302840504F007009D1 /* MainTabView.swift in Sources */,
 				99A0D70C28404AE7007009D1 /* InstagramSwiftUIApp.swift in Sources */,
 				99A0D72E28405006007009D1 /* NotificationsView.swift in Sources */,
+				99A0D73428407176007009D1 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
