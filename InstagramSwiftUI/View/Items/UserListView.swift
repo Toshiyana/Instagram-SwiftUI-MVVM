@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UserListVIew: View {
+struct UserListView: View {
     var body: some View {
         ScrollView {
             LazyVStack {
@@ -22,6 +22,6 @@ struct UserListVIew: View {
 
 struct UserListVIew_Previews: PreviewProvider {
     static var previews: some View {
-        UserListVIew()
+        UserListView()
     }
 }
