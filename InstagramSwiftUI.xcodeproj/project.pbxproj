@@ -27,6 +27,7 @@
 		99A0D74228420FB4007009D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D74128420FB3007009D1 /* ProfileHeaderView.swift */; };
 		99A0D7442842165C007009D1 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D7432842165C007009D1 /* UserStatView.swift */; };
 		99A0D74628421ACE007009D1 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D74528421ACE007009D1 /* ProfileActionButtonView.swift */; };
+		99A0D748284228EC007009D1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D747284228EC007009D1 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		99A0D74128420FB3007009D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		99A0D7432842165C007009D1 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		99A0D74528421ACE007009D1 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		99A0D747284228EC007009D1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				99A0D73D2840C2F7007009D1 /* Extensions.swift */,
+				99A0D747284228EC007009D1 /* ImagePicker.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */,
 				99A0D73C2840B434007009D1 /* UserListView.swift in Sources */,
 				99A0D72828404FBC007009D1 /* UploadPostView.swift in Sources */,
+				99A0D748284228EC007009D1 /* ImagePicker.swift in Sources */,
 				99A0D74228420FB4007009D1 /* ProfileHeaderView.swift in Sources */,
 				99A0D7302840504F007009D1 /* MainTabView.swift in Sources */,
 				99A0D7442842165C007009D1 /* UserStatView.swift in Sources */,
