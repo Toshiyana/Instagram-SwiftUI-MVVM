@@ -24,6 +24,7 @@
 		99A0D73C2840B434007009D1 /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73B2840B434007009D1 /* UserListView.swift */; };
 		99A0D73E2840C2F8007009D1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73D2840C2F7007009D1 /* Extensions.swift */; };
 		99A0D7402840CC66007009D1 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D73F2840CC66007009D1 /* NotificationCell.swift */; };
+		99A0D74228420FB4007009D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D74128420FB3007009D1 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		99A0D73B2840B434007009D1 /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
 		99A0D73D2840C2F7007009D1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		99A0D73F2840CC66007009D1 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		99A0D74128420FB3007009D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				99A0D72928404FD0007009D1 /* ProfileView.swift */,
+				99A0D74128420FB3007009D1 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */,
 				99A0D73C2840B434007009D1 /* UserListView.swift in Sources */,
 				99A0D72828404FBC007009D1 /* UploadPostView.swift in Sources */,
+				99A0D74228420FB4007009D1 /* ProfileHeaderView.swift in Sources */,
 				99A0D7302840504F007009D1 /* MainTabView.swift in Sources */,
 				99A0D70C28404AE7007009D1 /* InstagramSwiftUIApp.swift in Sources */,
 				99A0D73A2840AB22007009D1 /* UserCell.swift in Sources */,
