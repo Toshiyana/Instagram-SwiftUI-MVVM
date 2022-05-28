@@ -15,14 +15,15 @@ struct ProfileHeaderView: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: 80, height: 80)
-                .clipShape(Circle())
+                    .clipShape(Circle())
+                    .padding(.leading)
                 
                 Spacer()
                 
                 HStack(spacing: 16) {
-                    UserStatView()
-                    UserStatView()
-                    UserStatView()
+                    UserStatView(value: 1, title: "Post")
+                    UserStatView(value: 2, title: "Followers")
+                    UserStatView(value: 4, title: "Following")
                 }.padding(.trailing, 32)
             }
             
@@ -38,32 +39,11 @@ struct ProfileHeaderView: View {
             HStack {
                 Spacer()
                 
-                Button(action: {}, label: {
-                    Text("Edit Profile")
-                        .font(.system(size: 14, weight: .semibold))
-                        .frame(width: 360, height: 32)
-                        .foregroundColor(.black)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 3)
-                                .stroke(Color.gray, lineWidth: 1)
-                        )
-                })
+                ProfileActionButtonView()
                 
                 Spacer()
             }.padding(.top)
         }
-    }
-}
-
-struct UserStatView: View {
-    var body: some View {
-        VStack {
-            Text("2")
-                .font(.system(size: 15, weight: .semibold))
-            
-            Text("Followers")
-                .font(.system(size: 15))
-        }.frame(width: 80, alignment: .center)
     }
 }
 
