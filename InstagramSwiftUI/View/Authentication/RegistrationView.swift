@@ -16,6 +16,7 @@ struct RegistrationView: View {
     @State private var image: Image?
     @State private var showingPhotoLibPicker = false
     @Environment(\.presentationMode) var mode
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         ZStack {
@@ -77,7 +78,9 @@ struct RegistrationView: View {
                         .padding(.horizontal, 32)
                 }
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    viewModel.register()
+                }, label: {
                     Text("Sign Up")
                         .font(.headline)
                         .foregroundColor(.white)
