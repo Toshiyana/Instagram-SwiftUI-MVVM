@@ -16,8 +16,8 @@ struct InstagramSwiftUIApp: App {
     
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-            LoginView().environmentObject(AuthViewModel())
+            ContentView().environmentObject(AuthViewModel()) // ObservableObjectプロトコルに準拠したデータクラス（classのインスタンス）とViewを紐付け
+//            LoginView().environmentObject(AuthViewModel())
         }
     }
 }

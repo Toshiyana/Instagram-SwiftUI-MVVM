@@ -10,7 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var viewModel: AuthViewModel // AuthViewModelクラスのインスタンスを共有（データバインディング）
     
     var body: some View {
         NavigationView {
