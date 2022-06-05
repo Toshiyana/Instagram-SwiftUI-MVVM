@@ -11,6 +11,8 @@ import Firebase
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     
+    static let shared = AuthViewModel() // staticをつけると全てのインスタンスで値が共有される（アクセスする時に型名を省略可能）
+    
     init() {
         userSession = Auth.auth().currentUser
     }
@@ -32,8 +34,9 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func singout() {
-        
+    func signout() {
+        self.userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func resetPassword() {
