@@ -10,6 +10,7 @@ import Firebase
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     
     static let shared = AuthViewModel() // staticをつけると全てのインスタンスで値が共有される（アクセスする時に型名を省略可能）
     
@@ -27,6 +28,7 @@ class AuthViewModel: ObservableObject {
             
             guard let user = result?.user else { return }
             self.userSession = user
+            self.fetchUser()
         }
     }
     
@@ -53,6 +55,7 @@ class AuthViewModel: ObservableObject {
                 COLLECTION_USERS.document(user.uid).setData(data) {_ in
                     print("Successfully uploaded user data...")
                     self.userSession = user
+                    self.fetchUser()
                 }
             }
         }
@@ -72,7 +75,7 @@ class AuthViewModel: ObservableObject {
         COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             // Firesoreから取得したデータをカスタム型（ここではUser型）に直接デコード。(Model/User.swift参照)
             guard let user = try? snapshot?.data(as: User.self) else { return }
-            print("DEBUG: User is \(user).")
+            self.currentUser = user
         }
     }
 }
