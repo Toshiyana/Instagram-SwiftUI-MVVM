@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		999BD744284D203200B3EB29 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD743284D203200B3EB29 /* ImageUploader.swift */; };
 		99A0D70C28404AE7007009D1 /* InstagramSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D70B28404AE7007009D1 /* InstagramSwiftUIApp.swift */; };
 		99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D70D28404AE7007009D1 /* ContentView.swift */; };
 		99A0D71028404AEC007009D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A0D70F28404AEC007009D1 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		999BD743284D203200B3EB29 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		99A0D70828404AE7007009D1 /* InstagramSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A0D70B28404AE7007009D1 /* InstagramSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUIApp.swift; sourceTree = "<group>"; };
 		99A0D70D28404AE7007009D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		99A0D71C28404EB8007009D1 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				999BD743284D203200B3EB29 /* ImageUploader.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				99A0D7382840A925007009D1 /* PostGridView.swift in Sources */,
 				99A0D74C28428641007009D1 /* RegistrationView.swift in Sources */,
 				99A0D7582843B9D6007009D1 /* PhotoLibraryPicker.swift in Sources */,
+				999BD744284D203200B3EB29 /* ImageUploader.swift in Sources */,
 				99A0D72A28404FD0007009D1 /* ProfileView.swift in Sources */,
 				99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */,
 				99A0D73C2840B434007009D1 /* UserListView.swift in Sources */,
