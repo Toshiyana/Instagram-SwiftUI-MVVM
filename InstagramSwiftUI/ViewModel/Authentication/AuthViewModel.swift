@@ -72,7 +72,7 @@ class AuthViewModel: ObservableObject {
         COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             // Firesoreから取得したデータをカスタム型（ここではUser型）に直接デコード。(Model/User.swift参照)
             guard let user = try? snapshot?.data(as: User.self) else { return }
-            print("DEBUG: User is \(user)")
+            print("DEBUG: User is \(user).")
         }
     }
 }
