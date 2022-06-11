@@ -31,6 +31,7 @@ struct FeedCell: View {
                             .cornerRadius(18)
                         
                         Text(viewModel.post.ownerUsername)
+                            .foregroundColor(.black)
                             .font(.system(size: 14, weight: .semibold))
                     }
                 }
