@@ -19,6 +19,7 @@ struct Notification: Identifiable, Decodable {
     
     var isFollowed: Bool? = false // set default value and use optional in case of failing decode.
     var post: Post?
+    var user: User?
 }
 
 enum NotificationType: Int, Decodable {
