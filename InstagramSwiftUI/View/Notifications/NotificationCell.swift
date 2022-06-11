@@ -22,7 +22,7 @@ struct NotificationCell: View {
         
         HStack {
             if let user = viewModel.notification.user {
-                NavigationLink(destination: ProfileView(user: user)) {
+                NavigationLink(destination: LazyView(ProfileView(user: user))) {
                     KFImage(URL(string: viewModel.notification.profileImageUrl))
                         .resizable()
                         .scaledToFill()
@@ -39,7 +39,7 @@ struct NotificationCell: View {
             
             if viewModel.notification.type != .follow {
                 if let post = viewModel.notification.post {
-                    NavigationLink(destination: FeedCell(viewModel: FeedCellViewModel(post: post))) {
+                    NavigationLink(destination: LazyView(FeedCell(viewModel: FeedCellViewModel(post: post)))) {
                         KFImage(URL(string: post.imageUrl))
                             .resizable()
                             .scaledToFill()
