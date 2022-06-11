@@ -16,6 +16,8 @@ struct Notification: Identifiable, Decodable {
     let timestamp: Timestamp
     let type: NotificationType
     let uid: String
+    
+    var isFollowed: Bool? = false // set default value and use optional in case of failing decode.
 }
 
 enum NotificationType: Int, Decodable {

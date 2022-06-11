@@ -33,6 +33,7 @@
 		999BD7782853603500B3EB29 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD7772853603500B3EB29 /* CustomInputView.swift */; };
 		999BD77A28543EEF00B3EB29 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD77928543EEF00B3EB29 /* Notification.swift */; };
 		999BD77C28544F7800B3EB29 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD77B28544F7800B3EB29 /* NotificationsViewModel.swift */; };
+		999BD77E2854722B00B3EB29 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD77D2854722B00B3EB29 /* NotificationCellViewModel.swift */; };
 		99A0D70C28404AE7007009D1 /* InstagramSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D70B28404AE7007009D1 /* InstagramSwiftUIApp.swift */; };
 		99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D70D28404AE7007009D1 /* ContentView.swift */; };
 		99A0D71028404AEC007009D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A0D70F28404AEC007009D1 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		999BD7772853603500B3EB29 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
 		999BD77928543EEF00B3EB29 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		999BD77B28544F7800B3EB29 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
+		999BD77D2854722B00B3EB29 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 		99A0D70828404AE7007009D1 /* InstagramSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A0D70B28404AE7007009D1 /* InstagramSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUIApp.swift; sourceTree = "<group>"; };
 		99A0D70D28404AE7007009D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				999BD77B28544F7800B3EB29 /* NotificationsViewModel.swift */,
+				999BD77D2854722B00B3EB29 /* NotificationCellViewModel.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				999BD7702853582200B3EB29 /* Comment.swift in Sources */,
 				99A0D7402840CC66007009D1 /* NotificationCell.swift in Sources */,
 				999BD77A28543EEF00B3EB29 /* Notification.swift in Sources */,
+				999BD77E2854722B00B3EB29 /* NotificationCellViewModel.swift in Sources */,
 				99A0D74A28428624007009D1 /* LoginView.swift in Sources */,
 				99A0D73E2840C2F8007009D1 /* Extensions.swift in Sources */,
 				999BD746284DBB7100B3EB29 /* Constants.swift in Sources */,
