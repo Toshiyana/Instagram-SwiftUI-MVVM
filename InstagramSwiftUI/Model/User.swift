@@ -16,7 +16,13 @@ struct User: Identifiable, Decodable {
     // FirebaseFirestoreSwift libを使い、@ DocumentIDを定義することで、
     // Firesoreから取得したデータをカスタム型（ここではUser型）に直接デコード。
     // (使わない場合、Firestoreからdictionaryを取得して、いちいちデータをUser型で定義した変数に代入する必要があるので面倒)
+    var stats: UserStats?
     var isFollowed: Bool? = false
-    
     var isCurrentUser: Bool { return AuthViewModel.shared.userSession?.uid == id }
+}
+
+struct UserStats: Decodable {
+    var following: Int
+    var posts: Int
+    var followers: Int
 }
