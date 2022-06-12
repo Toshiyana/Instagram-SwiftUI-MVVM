@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct EditProfileView: View {
-    @State private var bioText = ""
+    @State private var bioText: String
+    @Environment(\.presentationMode) var mode
+    @Binding var user: User // Define user to update bio after saving it
+    @ObservedObject private var viewModel: EditProfileViewModel
+    
+    init(user: Binding<User>) {
+        self._user = user
+        self.viewModel = EditProfileViewModel(user: self._user.wrappedValue) // don't still understand why using wrappedValue
+        self._bioText = State(initialValue: _user.wrappedValue.bio ?? "")
+    }
     
     var body: some View {
         VStack {
             HStack {
-                Button(action: {}) {
+                Button(action: { mode.wrappedValue.dismiss() }) {
                     Text("Cancel")
                 }
                 
                 Spacer()
                 
-                Button(action: {}) {
+                Button(action: { viewModel.saveUserBio(bioText) }) {
                     Text("Done").bold()
                 }
             }.padding()
@@ -30,11 +39,11 @@ struct EditProfileView: View {
             
             Spacer()
         }
-    }
-}
-
-struct EditProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditProfileView()
+        .onReceive(viewModel.$uploadComplete) { completed in
+            if completed {
+                self.mode.wrappedValue.dismiss()
+                self.user.bio = viewModel.user.bio // set binding user (this is different with the user in EditProfileViewModel)
+            }
+        }
     }
 }

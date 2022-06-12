@@ -10,7 +10,11 @@ import SwiftUI
 struct ResetPasswordView: View {
     @EnvironmentObject var viewModel: AuthViewModel
     @Environment(\.presentationMode) var mode
-    @Binding var email: String
+    @Binding private var email: String
+    
+    init(email: Binding<String>) {
+        self._email = email
+    }
     
     var body: some View {
         ZStack {
