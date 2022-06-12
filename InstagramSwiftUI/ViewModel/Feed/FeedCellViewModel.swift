@@ -73,14 +73,14 @@ class FeedCellViewModel: ObservableObject {
             .getDocument { snapshot, _ in
                 guard let didLike = snapshot?.exists else { return }
                 self.post.didLike = didLike
-                print("DEBUG: check if user liked post..")
+//                print("DEBUG: check if user liked post..")
             }
     }
     
     func fetchPostUser() {
         COLLECTION_USERS.document(post.ownerUid).getDocument { snapshot, _ in
             self.post.user = try? snapshot?.data(as: User.self)
-//            print("DEBUG: fetch post user...")
+            print("DEBUG: fetch post user...")
         }
     }
 }

@@ -44,7 +44,7 @@ class CommentViewModel: ObservableObject {
         guard let postId = post.id else { return }
         
         let query = COLLECTION_POSTS.document(postId).collection("post-comments")
-            .order(by: "timestamp", descending: true)
+            .order(by: "timestamp", descending: false)
         
         query.addSnapshotListener { snapshot, _ in
             guard let addedDocs = snapshot?.documentChanges.filter({ $0.type == .added }) else { return }

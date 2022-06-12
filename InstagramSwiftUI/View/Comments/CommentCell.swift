@@ -9,22 +9,34 @@ import SwiftUI
 import Kingfisher
 
 struct CommentCell: View {
-    let comment: Comment
+    @ObservedObject var viewModel: CommentCellViewModel
+    
+    init(viewModel: CommentCellViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         HStack {
-            KFImage(URL(string: comment.profileImageUrl))
-                .resizable()
-                .scaledToFill()
-                .frame(width: 36, height: 36)
-                .clipShape(Circle())
+            if let user = viewModel.comment.user {
+                NavigationLink(destination: LazyView(ProfileView(user: user))) {
+                    KFImage(URL(string: viewModel.comment.profileImageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 36, height: 36)
+                        .clipShape(Circle())
+                    
+                    Text(viewModel.comment.username)
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.black)
+                }
+            }
             
-            Text(comment.username).font(.system(size: 14, weight: .semibold)) +
-            Text(" \(comment.commentText)").font(.system(size: 14))
+            Text(" \(viewModel.comment.commentText)")
+                .font(.system(size: 14))
             
             Spacer()
             
-            Text(" \(comment.timestampString ?? "")")
+            Text(" \(viewModel.timestampString)")
                 .foregroundColor(.gray)
                 .font(.system(size: 12))
         }.padding(.horizontal)

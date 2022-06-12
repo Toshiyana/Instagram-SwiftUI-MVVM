@@ -35,6 +35,7 @@
 		999BD77C28544F7800B3EB29 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD77B28544F7800B3EB29 /* NotificationsViewModel.swift */; };
 		999BD77E2854722B00B3EB29 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD77D2854722B00B3EB29 /* NotificationCellViewModel.swift */; };
 		999BD7802854E13900B3EB29 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD77F2854E13900B3EB29 /* LazyView.swift */; };
+		999BD7822854F8A600B3EB29 /* CommentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999BD7812854F8A500B3EB29 /* CommentCellViewModel.swift */; };
 		99A0D70C28404AE7007009D1 /* InstagramSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D70B28404AE7007009D1 /* InstagramSwiftUIApp.swift */; };
 		99A0D70E28404AE7007009D1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99A0D70D28404AE7007009D1 /* ContentView.swift */; };
 		99A0D71028404AEC007009D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99A0D70F28404AEC007009D1 /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		999BD77B28544F7800B3EB29 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewModel.swift; sourceTree = "<group>"; };
 		999BD77D2854722B00B3EB29 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCellViewModel.swift; sourceTree = "<group>"; };
 		999BD77F2854E13900B3EB29 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		999BD7812854F8A500B3EB29 /* CommentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellViewModel.swift; sourceTree = "<group>"; };
 		99A0D70828404AE7007009D1 /* InstagramSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99A0D70B28404AE7007009D1 /* InstagramSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramSwiftUIApp.swift; sourceTree = "<group>"; };
 		99A0D70D28404AE7007009D1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		999BD7832855066100B3EB29 /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				999BD7712853583D00B3EB29 /* CommentViewModel.swift */,
+				999BD7812854F8A500B3EB29 /* CommentCellViewModel.swift */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		999BD7842855AEF400B3EB29 /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+				999BD75F284F364B00B3EB29 /* UploadPostViewModel.swift */,
+			);
+			path = UploadPost;
+			sourceTree = "<group>";
+		};
+		999BD7852855AF1600B3EB29 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				999BD756284DD0B800B3EB29 /* SearchViewModel.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		999BD7862855AF2700B3EB29 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				999BD7672852638500B3EB29 /* PostGridViewModel.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
 		99A0D6FF28404AE7007009D1 = {
 			isa = PBXGroup;
 			children = (
@@ -206,14 +241,14 @@
 		99A0D71B28404E6C007009D1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				99A0D78C284715E1007009D1 /* Profile */,
+				999BD7862855AF2700B3EB29 /* Items */,
 				99A0D78D284715E9007009D1 /* Authentication */,
-				99A0D78E284715F7007009D1 /* Feed */,
 				99A0D78F284715FD007009D1 /* Notifications */,
-				999BD756284DD0B800B3EB29 /* SearchViewModel.swift */,
-				999BD75F284F364B00B3EB29 /* UploadPostViewModel.swift */,
-				999BD7672852638500B3EB29 /* PostGridViewModel.swift */,
-				999BD7712853583D00B3EB29 /* CommentViewModel.swift */,
+				999BD7852855AF1600B3EB29 /* Search */,
+				999BD7832855066100B3EB29 /* Comments */,
+				99A0D78E284715F7007009D1 /* Feed */,
+				99A0D78C284715E1007009D1 /* Profile */,
+				999BD7842855AEF400B3EB29 /* UploadPost */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -486,6 +521,7 @@
 				999BD7702853582200B3EB29 /* Comment.swift in Sources */,
 				99A0D7402840CC66007009D1 /* NotificationCell.swift in Sources */,
 				999BD77A28543EEF00B3EB29 /* Notification.swift in Sources */,
+				999BD7822854F8A600B3EB29 /* CommentCellViewModel.swift in Sources */,
 				999BD77E2854722B00B3EB29 /* NotificationCellViewModel.swift in Sources */,
 				99A0D74A28428624007009D1 /* LoginView.swift in Sources */,
 				99A0D73E2840C2F8007009D1 /* Extensions.swift in Sources */,
